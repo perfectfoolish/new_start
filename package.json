@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/perfectfoolish/qd#readme",
   "devDependencies": {
+    "babel-loader": "^5.3.3",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
     "gulp-sass": "^2.0.4",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
     "webpack": "^1.12.2"
   }
 }

@@ -2,11 +2,12 @@ module.exports = {
   entry: "./main.js",
   output: {
     path: __dirname,
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: '/static/'
   },
   module: {
     loaders: [
-    { test: /\.css$/, loader: "style!css" }
+    { test: /\.js$/, loader: "babel" }
     ]
   }
 };

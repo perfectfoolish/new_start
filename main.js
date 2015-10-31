@@ -1,2 +1,3 @@
-require('./hello.js');
-console.log("main.js");
+require('./components/Action.js');
+require('./components/Books.js');
+require('./components/Haoduo.js');
