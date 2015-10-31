@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/static/";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -46,9 +46,10 @@
 
 	'use strict';
 
-	__webpack_require__(1);
-	__webpack_require__(160);
-	__webpack_require__(161);
+	var App = __webpack_require__(1);
+	var React = __webpack_require__(2);
+	var ReactDOM = __webpack_require__(159);
+	ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -58,19 +59,24 @@
 
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(159);
+	var Action = __webpack_require__(160);
+	var Books = __webpack_require__(161);
+	var Haoduo = __webpack_require__(162);
 
-	var Action = React.createClass({
-	  displayName: 'Action',
+	var App = React.createClass({
+	  displayName: 'App',
 
 	  render: function render() {
 	    return React.createElement(
 	      'div',
-	      { className: 'action clearfix' },
-	      React.createElement('a', { href: '#', className: 'action-button button' })
+	      null,
+	      React.createElement(Action, null),
+	      React.createElement(Haoduo, null),
+	      React.createElement(Books, null)
 	    );
 	  }
 	});
-	ReactDOM.render(React.createElement(Action, null), document.getElementById('action'));
+	module.exports = App;
 
 /***/ },
 /* 2 */
@@ -19655,73 +19661,92 @@
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(2);
-	var ReactDOM = __webpack_require__(159);
 
-	var Books = React.createClass({
-	  displayName: 'Books',
+	var Action = React.createClass({
+	  displayName: "Action",
 
 	  render: function render() {
 	    return React.createElement(
-	      'div',
-	      { className: 'books clearfix' },
-	      React.createElement(
-	        'div',
-	        { className: 'book' },
-	        React.createElement('img', { src: 'images/github.jpg', alt: true, className: 'cover' })
-	      ),
-	      React.createElement(
-	        'div',
-	        { className: 'book' },
-	        React.createElement('img', { src: 'images/tealeaf-http.jpg', alt: true, className: 'cover' })
-	      ),
-	      React.createElement(
-	        'div',
-	        { className: 'book' },
-	        React.createElement('img', { src: 'images/tlcl-book.jpg', alt: true, className: 'cover' })
-	      )
+	      "div",
+	      { className: "action clearfix" },
+	      React.createElement("a", { href: "#", className: "action-button button" })
 	    );
 	  }
 	});
-	ReactDOM.render(React.createElement(Books, null), document.getElementById('books'));
+	module.exports = Action;
 
 /***/ },
 /* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(2);
-	var ReactDOM = __webpack_require__(159);
 
-	var Haoduo = React.createClass({
-	  displayName: 'Haoduo',
+	var Books = React.createClass({
+	  displayName: "Books",
 
 	  render: function render() {
 	    return React.createElement(
-	      'div',
-	      { className: 'haoduo clearfix' },
+	      "div",
+	      { className: "books clearfix" },
 	      React.createElement(
-	        'h2',
-	        null,
-	        '好多视频网'
+	        "div",
+	        { className: "book" },
+	        React.createElement("img", { src: "images/github.jpg", alt: true, className: "cover" })
 	      ),
 	      React.createElement(
-	        'p',
-	        null,
-	        'happypeter web 开发技巧分享'
+	        "div",
+	        { className: "book" },
+	        React.createElement("img", { src: "images/tealeaf-http.jpg", alt: true, className: "cover" })
 	      ),
 	      React.createElement(
-	        'a',
-	        { href: '#', className: 'visit-haoduo' },
-	        '访问'
+	        "div",
+	        { className: "book" },
+	        React.createElement("img", { src: "images/tlcl-book.jpg", alt: true, className: "cover" })
 	      )
 	    );
 	  }
 	});
-	ReactDOM.render(React.createElement(Haoduo, null), document.getElementById('haoduo'));
+	module.exports = Books;
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var Haoduo = React.createClass({
+	  displayName: "Haoduo",
+
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      { className: "haoduo clearfix" },
+	      React.createElement(
+	        "h2",
+	        null,
+	        "好多视频网"
+	      ),
+	      React.createElement(
+	        "p",
+	        null,
+	        "happypeter web 开发技巧分享"
+	      ),
+	      React.createElement(
+	        "a",
+	        { href: "#", className: "visit-haoduo" },
+	        "访问"
+	      )
+	    );
+	  }
+	});
+	module.exports = Haoduo;
 
 /***/ }
 /******/ ]);

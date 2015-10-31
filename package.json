@@ -17,12 +17,13 @@
   },
   "homepage": "https://github.com/perfectfoolish/qd#readme",
   "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
     "babel-loader": "^5.3.3",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-sass": "^2.0.4",
+    "css-loader": "^0.21.0",
     "react": "^0.14.1",
     "react-dom": "^0.14.1",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.2"
   }
 }

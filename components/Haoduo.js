@@ -1,5 +1,4 @@
 var React = require('react')
-var ReactDOM = require('react-dom')
 
 var Haoduo = React.createClass({
   render: function() {
@@ -13,4 +12,4 @@ var Haoduo = React.createClass({
     );
   }
 });
-ReactDOM.render(<Haoduo />, document.getElementById('haoduo'));
+module.exports = Haoduo;

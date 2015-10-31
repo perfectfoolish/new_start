@@ -1,5 +1,4 @@
 var React = require('react')
-var ReactDOM = require('react-dom')
 
 var Books = React.createClass({
   render: function() {
@@ -13,4 +12,4 @@ var Books = React.createClass({
     );
   }
 });
-ReactDOM.render(<Books />, document.getElementById('books'));
+module.exports = Books;
