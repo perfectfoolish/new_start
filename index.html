@@ -12,30 +12,11 @@
 <body>
   <header></header>
   <div id="action"></div>
-  <div class="haoduo clearfix">
-    <h2>好多视频网</h2>
-    <p>happypeter web 开发技巧分享</p>
-    <a href="#" class="visit-haoduo">访问</a>
-  </div>
-  <div class="books clearfix">
-    <div class="book"><img src="images/github.jpg" alt="" class="cover"></div>
-    <div class="book"><img src="images/tealeaf-http.jpg" alt="" class="cover"></div>
-    <div class="book"><img src="images/tlcl-book.jpg" alt="" class="cover"></div>
-  </div>
-
+  <div id="haoduo"></div>
+  <div id="books"></div>
   <footer></footer>
-  <script type="text/babel">
-  var Action = React.createClass({
-    render: function() {
-      return (
-
-        <div className="action clearfix">
-        <a href="#" className="action-button button" />
-        </div>
-        );
-    }
-  });
-  ReactDOM.render(<Action />, document.getElementById('action'));
-  </script>
+  <script type="text/babel" src="components/Action.js"></script>
+  <script type="text/babel" src="components/Haoduo.js"></script>
+  <script type="text/babel" src="components/Books.js"></script>
 </body>
 </html>
