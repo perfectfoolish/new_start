@@ -1,19 +1,10 @@
 @import 'common';
-
+@import 'action';
 header {
   height: 5em;
   background-color: $primary-color;
 }
-.action {
-  height: 13em;
-  .action-button {
-    margin: 0 auto;
-    margin-top: 7em;
-    @media (min-width: 600px) {
-      background-color: lightseagreen;
-    }
-  }
-}
+
 .haoduo {
   background-color: $primary-color;
   h2 {

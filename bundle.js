@@ -49,7 +49,7 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
 	var App = __webpack_require__(159);
-	__webpack_require__(163);
+	__webpack_require__(164);
 	ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
 /***/ },
@@ -19640,8 +19640,8 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
 	var Action = __webpack_require__(160);
-	var Books = __webpack_require__(161);
-	var Haoduo = __webpack_require__(162);
+	var Books = __webpack_require__(162);
+	var Haoduo = __webpack_require__(163);
 
 	var App = React.createClass({
 	  displayName: 'App',
@@ -19662,18 +19662,19 @@
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(1);
+	var SearchButton = __webpack_require__(161);
 
 	var Action = React.createClass({
-	  displayName: "Action",
+	  displayName: 'Action',
 
 	  render: function render() {
 	    return React.createElement(
-	      "div",
-	      { className: "action clearfix" },
-	      React.createElement("a", { href: "#", className: "action-button button" })
+	      'div',
+	      { className: 'action clearfix' },
+	      React.createElement(SearchButton, null)
 	    );
 	  }
 	});
@@ -19681,6 +19682,27 @@
 
 /***/ },
 /* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+
+	var SearchButton = React.createClass({
+	  displayName: "SearchButton",
+
+	  render: function render() {
+	    return React.createElement(
+	      "a",
+	      { href: "#", className: "search-button" },
+	      "Search"
+	    );
+	  }
+	});
+	module.exports = SearchButton;
+
+/***/ },
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19715,7 +19737,7 @@
 	module.exports = Books;
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19750,16 +19772,16 @@
 	module.exports = Haoduo;
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(164);
+	var content = __webpack_require__(165);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(166)(content, {});
+	var update = __webpack_require__(167)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -19776,10 +19798,10 @@
 	}
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(165)();
+	exports = module.exports = __webpack_require__(166)();
 	// imports
 
 
@@ -19790,7 +19812,7 @@
 
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports) {
 
 	/*
@@ -19845,7 +19867,7 @@
 	};
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
