@@ -1,0 +1,12 @@
+@import 'search_button';
+
+.action {
+  height: 13em;
+  .action-button {
+    margin: 0 auto;
+    margin-top: 7em;
+    @media (min-width: 600px) {
+      background-color: lightseagreen;
+    }
+  }
+}
