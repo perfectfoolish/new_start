@@ -9,6 +9,8 @@ $primary-text-color:   #212121;
 $secondary-text-color: #727272;
 $divider-color:        #B6B6B6;
 
+@import "button";
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -31,10 +33,4 @@ ul {
 }
 a {
   text-decoration: none;
-}
-.button {
-  background-color: $accent-color;
-  width: 7em;
-  height: 3em;
-  display: block;
 }

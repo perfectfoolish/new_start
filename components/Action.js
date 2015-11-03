@@ -1,12 +1,12 @@
 var React = require('react')
-var SearchButton = require('./SearchButton.js');
+var Button = require('./Button.js')
 
 var Action = React.createClass({
   render: function() {
     return (
 
       <div className="action clearfix">
-      <SearchButton />
+      <Button isPink={true} text={'Search'}/>
       </div>
       );
   }
