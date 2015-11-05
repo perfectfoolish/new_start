@@ -1,0 +1,32 @@
+{
+  "name": "qd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfectfoolish/qd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perfectfoolish/qd/issues"
+  },
+  "homepage": "https://github.com/perfectfoolish/qd#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-loader": "^5.3.3",
+    "classnames": "^2.2.0",
+    "css-loader": "^0.21.0",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
