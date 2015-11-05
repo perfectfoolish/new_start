@@ -1,5 +1,1 @@
 node_modules/
-
-# Use webpack create the new bundle.js file
-bundle.js
-
